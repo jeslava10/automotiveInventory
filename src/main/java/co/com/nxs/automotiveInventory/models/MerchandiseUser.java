@@ -3,8 +3,10 @@ package co.com.nxs.automotiveInventory.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 import javax.persistence.Column;
@@ -20,6 +22,8 @@ import java.util.Date;
 @Builder
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "merchandise_user")
 public class MerchandiseUser {
 

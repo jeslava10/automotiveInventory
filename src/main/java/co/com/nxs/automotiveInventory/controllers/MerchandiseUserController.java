@@ -64,7 +64,7 @@ public class MerchandiseUserController {
             @ApiResponse(code = 401, message = "You are not authorized"),
             @ApiResponse(code = 404, message = "Not Found"),
             @ApiResponse(code = 500, message = "Internal Server Error")})
-    public List<MerchandiseUserDTO> findAllDocumentType() {
+    public List<MerchandiseUserDTO> findAllMerchandiseUser() {
         return merchandiseUserService.findAllMerchandiseUser();
     }
 

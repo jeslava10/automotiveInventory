@@ -24,4 +24,21 @@ public class MerchandiseUserTransform {
 
     }
 
+    public MerchandiseUser MerchandiseUserDTOToMerchandiseUser(MerchandiseUserDTO merchandiseUserDTO) {
+        MerchandiseUser merchandiseUserResponse = null;
+
+        if (null != merchandiseUserDTO) {
+            merchandiseUserResponse = MerchandiseUser.builder()
+                    .id(merchandiseUserDTO.getId())
+                    .name(merchandiseUserDTO.getName())
+                    .admissionDate(merchandiseUserDTO.getAdmissionDate())
+                    .age(merchandiseUserDTO.getAge())
+                    .idAppointment(appointmentTransforms.AppointmentDtoToAppointment(merchandiseUserDTO.getIdAppointment()))
+                    .build();
+        }
+
+        return merchandiseUserResponse;
+
+    }
+
 }

@@ -18,4 +18,18 @@ public class AppointmentTransform {
         return appointmentDTOResponse;
     }
 
+    public Appointment AppointmentDtoToAppointment(AppointmentDTO appointmentDTO){
+        Appointment appointmenResponse = null;
+
+        if (null != appointmentDTO){
+            appointmenResponse = Appointment.builder()
+                    .id(appointmentDTO.getId())
+                    .description(appointmentDTO.getDescription())
+                    .build();
+        }
+
+        return appointmenResponse;
+    }
+
+
 }
