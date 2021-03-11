@@ -1,7 +1,7 @@
 # automotiveInventory
  Automotive inventory nexos test
  
-The following technologies were used in this project:
+En este proyecto se utilizaron las siguientes tecnologías:
 - Java 8
 - Gradle
 - Lombok
@@ -14,7 +14,7 @@ The following technologies were used in this project:
 - PostgreSQL
 - Flyway
 
-## Requirements
+## Requisitos
 - Java 8
 - Gradle
 - PostgreSQL
@@ -24,16 +24,16 @@ The following technologies were used in this project:
 
 
 ## Health
-The health was added to be able to verify the status of the api
+Se agregó la salud para poder verificar el estado de la api
 
-##### Check the status of the api
+##### Verificar el estado de la api
 ##### GET
 ```bash
 http://localhost:8889/api/automotiveInventory/actuator/health
 ```
 
-## Documentation
-You can get more information in the Swagger documentation: 
+## Documentación
+Puede obtener más información en la documentación de Swagger: 
 ```bash
 http://localhost:8889/api/automotiveInventory/swagger-ui.html
 ```
